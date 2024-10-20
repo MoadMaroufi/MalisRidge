@@ -23,9 +23,3 @@ where $\mu$ is the mean of the years and $\sigma$ is the standard deviation.<br>
 We select the alpha with the best TimeSeriesSplit cross-validation score. We use a grid search for this, keeping in mind that increasing alpha results in a simpler model, i.e., the bias increases and the variance decreases by imposing a penalty on the weights.
 
 We also introduced polynomial features afterwards to better fit the data, which is not really linear. We chose degree 2 because a higher degree would result in overfitting the data, which is very simple and scarce in our case.
-
-
-
-
-## Chatgpt'use
-We write an initial version of the code an then we ask ChatGPT  if there is a better way, if we missed something , ensuring it adheres to our logic, as ChatGPT's logic is flawed most of the time and to stick to our specifications (such as calculating the bias term separately and using Cholesky decomposition). We apply this approach to most of our code, fine-tuning and modifying it to our preferences later. We also asked chatGPT to explain  the time series cross validation and the cholesky decompistion.
